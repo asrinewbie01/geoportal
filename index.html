@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoPortal Desa</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #2e2e2e;
+      color: #d6d6d6;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #1f1f1f;
+    }
+
+    .navbar-brand {
+      color: #cfd8dc !important;
+      font-weight: 600;
+    }
+
+    .nav-link {
+      color: #b0bec5 !important;
+      margin: 0 8px;
+    }
+
+    .nav-link:hover {
+      color: #e0e0e0 !important;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      color: #cfd8dc;
+      font-weight: 600;
+    }
+
+    .hero p {
+      color: #b0bec5;
+      font-size: 1.05rem;
+    }
+
+    /* Card */
+    .info-card {
+      background-color: #3b3b3b;
+      border-radius: 14px;
+      padding: 25px;
+      height: 100%;
+      border: 1px solid #4a4a4a;
+    }
+
+    .info-card h4 {
+      color: #cfd8dc;
+      margin-bottom: 12px;
+    }
+
+    .info-card p {
+      color: #c2c2c2;
+      font-size: 0.95rem;
+    }
+
+    .btn-soft {
+      background-color: #546e7a;
+      color: #eceff1;
+      border-radius: 25px;
+      padding: 8px 18px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .btn-soft:hover {
+      background-color: #607d8b;
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      color: #9e9e9e;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">GeoPortal</a>
+    <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="Peta_Desa/index.html">Peta Desa</a></li>
+        <li class="nav-item"><a class="nav-link" href="Peta_Kecamatan/index.html">Peta Kecamatan</a></li>
+        <li class="nav-item"><a class="nav-link" href="tanyaarah.html">Tanya Arah</a></li>
+        <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <h1>Satu Peta, Satu Data</h1>
+  <p>Portal informasi geografis desa dan kecamatan berbasis web</p>
+</div>
+
+<!-- Konten -->
+<div class="container mb-5">
+  <div class="row g-4">
+
+    <!-- Peta Desa -->
+    <div class="col-md-4">
+      <div class="info-card">
+        <h4>Peta Desa</h4>
+        <p>
+          Menyajikan informasi batas wilayah, fasilitas umum,
+          dan data spasial tingkat desa secara interaktif.
+        </p>
+        <a href="Peta_Desa/index.html" class="btn-soft">Buka Peta Desa</a>
+      </div>
+    </div>
+
+    <!-- Peta Kecamatan -->
+    <div class="col-md-4">
+      <div class="info-card text-center">
+        <h4>Peta Kecamatan</h4>
+        <p>
+          Visualisasi wilayah kecamatan untuk mendukung
+          perencanaan dan analisis data wilayah.
+        </p>
+        <a href="Peta_Kecamatan/index.html" class="btn-soft">Buka Peta Kecamatan</a>
+      </div>
+    </div>
+
+    <!-- Tanya Arah -->
+    <div class="col-md-4">
+      <div class="info-card">
+        <h4>Tanya Arah</h4>
+        <p>
+          Fitur pencarian rute dan arah lokasi penting
+          untuk memudahkan navigasi pengguna.
+        </p>
+        <a href="tanyaarah.html" class="btn-soft">Cari Arah</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2025 GeoPortal Desa & Kecamatan
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanya Arah | GeoPortal Desa</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS SAMA DENGAN INDEX -->
+  <style>
+    body {
+      background-color: #2e2e2e;
+      color: #d6d6d6;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      background-color: #1f1f1f;
+    }
+
+    .navbar-brand {
+      color: #cfd8dc !important;
+      font-weight: 600;
+    }
+
+    .nav-link {
+      color: #b0bec5 !important;
+      margin: 0 8px;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: #e0e0e0 !important;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      color: #cfd8dc;
+      font-weight: 600;
+    }
+
+    .hero p {
+      color: #b0bec5;
+      font-size: 1.05rem;
+    }
+
+    .info-card {
+      background-color: #3b3b3b;
+      border-radius: 14px;
+      padding: 25px;
+      border: 1px solid #4a4a4a;
+    }
+
+    .info-card h4 {
+      color: #cfd8dc;
+      margin-bottom: 12px;
+    }
+
+    .info-card p {
+      color: #c2c2c2;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      color: #9e9e9e;
+    }
+
+    iframe {
+      border-radius: 12px;
+      border: 1px solid #4a4a4a;
+    }
+
+    .form-select {
+      background-color: #2e2e2e;
+      color: #d6d6d6;
+      border: 1px solid #4a4a4a;
+    }
+
+    .form-select option {
+      background-color: #2e2e2e;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">GeoPortal</a>
+    <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="Peta_Desa/index.html">Peta Desa</a></li>
+        <li class="nav-item"><a class="nav-link" href="Peta_Kecamatan/index.html">Peta Kecamatan</a></li>
+        <li class="nav-item"><a class="nav-link active" href="tanyaarah.html">Tanya Arah</a></li>
+        <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Tanya Arah</h1>
+  <p>Rute dan lokasi desa di Kecamatan Kutasari, Kabupaten Purbalingga</p>
+</div>
+
+<!-- KONTEN -->
+<div class="container mb-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="info-card text-center">
+
+        <h4>Pilih Desa Tujuan</h4>
+        <p>Silakan pilih salah satu dari 14 desa di Kecamatan Kutasari.</p>
+
+        <!-- DROPDOWN DESA (VALID) -->
+        <select class="form-select mb-4" onchange="ubahPeta(this.value)">
+          <option value="">-- Pilih Desa --</option>
+          <option value="Desa Candinata, Kutasari, Purbalingga, Jawa Tengah">Desa Candinata</option>
+          <option value="Desa Candiwulan, Kutasari, Purbalingga, Jawa Tengah">Desa Candiwulan</option>
+          <option value="Desa Cendana, Kutasari, Purbalingga, Jawa Tengah">Desa Cendana</option>
+          <option value="Desa Karangaren, Kutasari, Purbalingga, Jawa Tengah">Desa Karangaren</option>
+          <option value="Desa Karangcegak, Kutasari, Purbalingga, Jawa Tengah">Desa Karangcegak</option>
+          <option value="Desa Karangjengkol, Kutasari, Purbalingga, Jawa Tengah">Desa Karangjengkol</option>
+          <option value="Desa Karangklesem, Kutasari, Purbalingga, Jawa Tengah">Desa Karangklesem</option>
+          <option value="Desa Karanglewas, Kutasari, Purbalingga, Jawa Tengah">Desa Karanglewa</option>
+          <option value="Desa Karangreja, Kutasari, Purbalingga, Jawa Tengah">Desa Karangreja</option>
+          <option value="Desa Kutasari, Kutasari, Purbalingga, Jawa Tengah">Desa Kutasari</option>
+          <option value="Desa Limbangan, Kutasari, Purbalingga, Jawa Tengah">Desa Limbangan</option>
+          <option value="Desa Meri, Kutasari, Purbalingga, Jawa Tengah">Desa Meri</option>
+          <option value="Desa Munjul, Kutasari, Purbalingga, Jawa Tengah">Desa Munjul</option>
+          <option value="Desa Sumingkir, Kutasari, Purbalingga, Jawa Tengah">Desa Sumingkir</option>
+        </select>
+
+        <!-- PETA -->
+        <iframe
+          id="peta"
+          src="https://www.google.com/maps?q=Kecamatan%20Kutasari%20Purbalingga%20Jawa%20Tengah&z=13&output=embed"
+          width="100%"
+          height="420"
+          loading="lazy">
+        </iframe>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 GeoPortal Desa & Kecamatan
+</footer>
+
+<!-- SCRIPT -->
+<script>
+  function ubahPeta(lokasi) {
+    if (lokasi !== "") {
+      document.getElementById("peta").src =
+        "https://www.google.com/maps?q=" + encodeURIComponent(lokasi) + "&z=15&output=embed";
+    }
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
